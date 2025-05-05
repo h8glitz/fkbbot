@@ -1,5 +1,6 @@
 # Токен вашего бота
-TOKEN = "8112936441:AAF8OP-MRpdRDfakI2lAND547r8gkLCLcsM"
+
+TOKEN = "8112936441:AAGubMkRz8jVPef3Mpd__9rkp2dMuke7Fl0"
 
 # Список администраторов
 ADMIN_IDS = [

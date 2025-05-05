@@ -44,7 +44,7 @@ def get_keyboard():
     keyboard = [
         [
             KeyboardButton(text="📸 Получить карту"),
-            KeyboardButton(text="🎬 Мой фильмстрип")
+            KeyboardButton(text="🎬 Моя коллекция")
         ],
         [KeyboardButton(text="☰ Меню")]
     ]
@@ -183,7 +183,7 @@ async def handle_message(message: types.Message, state: FSMContext):
     
     if message.text == "📸 Получить карту":
         await get_card(message)
-    elif message.text == "🎬 Мой фильмстрип":
+    elif message.text == "🎬 Моя коллекция":
         user = db.get_user(message.from_user.id)
         if not user:
             await message.answer("Ошибка: пользователь не найден")
